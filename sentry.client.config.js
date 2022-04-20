@@ -11,22 +11,20 @@ const isUserRejected = (err) => {
   return typeof err === 'object' && 'code' in err && err.code === 4001
 }
 
-const ENV = process.env.VERCEL_ENV || process.env.NODE_ENV
-
 Sentry.init({
-  dsn: SENTRY_DSN,
+  dsn: SENTRY_DSN || '',
   integrations: [
     new Sentry.Integrations.Breadcrumbs({
-      console: ENV === 'production',
+      console: process.env.NODE_ENV === 'production',
     }),
     new Sentry.Integrations.GlobalHandlers({
       onerror: false,
       onunhandledrejection: false,
     }),
   ],
-  environment: ENV === 'production' ? 'production' : 'development',
+  environment: process.env.NODE_ENV,
   // Adjust this value in production, or use tracesSampler for greater control
-  tracesSampleRate: 0,
+  tracesSampleRate: 0.1,
   // ...
   // Note: if you want to override the automatic release value, do not set a
   // `release` value here - use the environment variable `SENTRY_RELEASE`, so
@@ -43,6 +41,5 @@ Sentry.init({
     'Non-Error promise rejection captured',
     'User rejected the transaction',
     'cancelled',
-    'PollingBlockTracker',
   ],
 })
