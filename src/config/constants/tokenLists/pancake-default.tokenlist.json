@@ -10,6 +10,22 @@
   "logoURI": "https://pancakeswap.finance/logo.png",
   "keywords": ["pancake", "default"],
   "tokens": [
+     {
+      "name": "BigSwap Governance Token",
+      "symbol": "BGSP",
+      "address": "0xe9f861b22cd5240494ecc14afea02659ec59864f",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://bigswap.xyz/wp-content/uploads/2021/10/BGSP-e1634265434234.png"
+    },
+     {
+      "name": "BigSwap Finance Token",
+      "symbol": "BSFE",
+      "address": "0x2dea7895fb2addb76a400c859603d40e1cba5472",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://bigswap.xyz/wp-content/uploads/2021/10/unnamed-Recovered-2.png"
+    },  
     {
       "name": "WBNB Token",
       "symbol": "WBNB",
