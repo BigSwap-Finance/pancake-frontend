@@ -110,7 +110,7 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <SalesSection {...cakeSectionData} />
+        <SalesSection {...cakeSectionData(t)} />
         <CakeDataRow />
       </PageSection>
       <PageSection
