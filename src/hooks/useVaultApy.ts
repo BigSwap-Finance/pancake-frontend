@@ -54,7 +54,7 @@ export function useVaultApy({ duration = DEFAULT_MAX_DURATION }: { duration?: nu
     const calls = [
       {
         address: masterChefAddress,
-        name: 'cakePerBlock',
+        name: 'bgspPerBlock',
         params: [false],
       },
       {
