@@ -230,7 +230,7 @@ export const mainnetTokens = defineTokens({
   ),
   syrup: new Token(
     MAINNET,
-    '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
+    '0x80BCBe88e60EcE5eFF61FdC72dF9aF880f0C4e54',
     18,
     'SYRUP',
     'SyrupBar Token',
