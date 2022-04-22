@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { Currency, Token } from '@pancakeswap/sdk'
+import { Currency, Token } from '@bigswap/sdk'
 import {
   ModalContainer,
   ModalHeader,
