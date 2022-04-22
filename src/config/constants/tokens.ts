@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@pancakeswap/sdk'
+import { ChainId, Token } from '@bigswap/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'
@@ -22,9 +22,26 @@ export const mainnetTokens = defineTokens({
   ),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   bnb: new Token(MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'BNB', 'BNB', 'https://www.binance.com/'),
+   bgsp: new Token(
+    MAINNET,
+    '0xe9f861b22cd5240494ecc14afea02659ec59864f',
+    18,
+    'BGSP',
+    'BigSwap Governance Token',
+    'https://bigswap.xyz/home/'
+  ),
+   xbgsp: new Token(
+    MAINNET,
+    '0x80bcbe88e60ece5eff61fdc72df9af880f0c4e54',
+    18,
+    'xBGSP',
+    'xBGSP Token',
+    'https://bigswap.xyz/home/'
+  ),
+  bsfe: new Token(MAINNET, '0x2dea7895fb2addb76a400c859603d40e1cba5472', 18, 'BSFE', 'BigSwap Finance Token', 'https://www.bigswap.xyz/home/'),
   cake: new Token(
     MAINNET,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     18,
     'CAKE',
     'PancakeSwap Token',
