@@ -57,12 +57,17 @@ const Home: React.FC = () => {
         background={
           theme.isDark
             ? 'radial-gradient(103.12% 50% at 50% 50%, #ffffff 0%, #ffffff 100%)'
-            : 'linear-gradient(139.73deg, #ffffff 0%, #FFFFFF 100%)'
+            : 'linear-gradient(139.73deg, #ffffff 0%, #FFFFFF 100%)'       
         }
         index={2}
         hasCurvedDivider={false}
       >
-        
+        {account && (
+          <UserBannerWrapper>
+            <UserBanner />
+          </UserBannerWrapper>
+        )}
+        <MultipleBanner />
         <Hero />
       </StyledHeroSection>
       <PageSection
@@ -71,7 +76,6 @@ const Home: React.FC = () => {
           theme.isDark
             ? 'linear-gradient(180deg, #09070C 22%, #0000b8 100%)'
             : 'linear-gradient(180deg, #FFFFFF 22%, #0000b8 100%)'
-           
         }
         index={2}
         hasCurvedDivider={false}
@@ -89,7 +93,7 @@ const Home: React.FC = () => {
             <WedgeTopLeft />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
-        <SalesSection {...swapSectionData} />
+        <SalesSection {...swapSectionData(t)} />
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -102,7 +106,20 @@ const Home: React.FC = () => {
             <WedgeTopRight />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
-        <SalesSection {...earnSectionData} />
+        <SalesSection {...earnSectionData(t)} />
+        <FarmsPoolsRow />
+      </PageSection>
+      <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background={
+          theme.isDark
+            ? 'linear-gradient(180deg, #0B4576 0%, #091115 100%)'
+            : 'linear-gradient(180deg, #6FB6F1 0%, #EAF2F6 100%)'
+        }
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <WinSection />
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -110,7 +127,7 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <SalesSection {...cakeSectionData} />
+        <SalesSection {...cakeSectionData(t)} />
         <CakeDataRow />
       </PageSection>
       <PageSection
