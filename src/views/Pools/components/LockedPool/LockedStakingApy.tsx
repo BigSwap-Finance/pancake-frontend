@@ -114,7 +114,7 @@ const LockedStakingApy: React.FC<LockedStakingApyPropsType> = ({ stakingToken, s
             {t('After Deduction In')}
           </Text>
           <Text color="failure" bold>
-            <DeductionCountDown lockEndTime={userData?.lockEndTime} />
+            <BurningCountDown lockEndTime={userData?.lockEndTime} />
           </Text>
         </Flex>
       )}
