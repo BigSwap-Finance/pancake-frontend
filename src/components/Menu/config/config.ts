@@ -60,27 +60,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       },
     ],
   },
-  {
-    label: t('Win'),
-    href: '/prediction',
-    icon: TrophyIcon,
-    fillIcon: TrophyFillIcon,
-    items: [
-      {
-        label: t('Trading Competition'),
-        href: '/competition',
-      },
-      {
-        label: t('Prediction (BETA)'),
-        href: '/prediction',
-      },
-      {
-        label: t('Lottery'),
-        href: '/lottery',
-      },
-    ],
-  },
-  {
+ /* {
     label: t('NFT'),
     href: `${nftsBaseUrl}`,
     icon: NftIcon,
@@ -99,7 +79,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
         href: `${nftsBaseUrl}/activity`,
       },
     ],
-  },
+  }, */
   {
     label: '',
     href: '/info',
@@ -110,32 +90,28 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
         label: t('Info'),
         href: '/info',
       },
-      {
+     /* {
         label: t('IFO'),
         href: '/ifo',
-      },
+      }, 
       {
         label: t('Voting'),
         href: '/voting',
-      },
+      }, */
       {
         type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        label: t('Leaderboard'),
-        href: '/teams',
       },
       {
         type: DropdownMenuItemType.DIVIDER,
       },
       {
         label: t('Blog'),
-        href: 'https://medium.com/pancakeswap',
+        href: 'https://medium.com/Bigswap-Finance',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {
         label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.bigswap.exchange',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],
