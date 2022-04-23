@@ -86,7 +86,7 @@ const stakedStatus = {
   [VaultPosition.None]: { text: '', color: 'secondary' },
   [VaultPosition.Locked]: { text: 'Locked', color: 'secondary' },
   [VaultPosition.LockedEnd]: { text: 'Locked End', color: 'secondary' },
-  [VaultPosition.AfterBurning]: { text: 'After Burning', color: 'failure' },
+  [VaultPosition.AfterBurning]: { text: 'After Deductions for Community Rewards', color: 'failure' },
   [VaultPosition.Flexible]: { text: 'Flexible', color: 'success' },
 }
 
