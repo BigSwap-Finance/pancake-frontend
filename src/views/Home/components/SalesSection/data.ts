@@ -68,4 +68,4 @@ export const cakeSectionData: SalesSectionProps = {
       { src: '', alt: '' }, 
     ],
    },
-})  
+} 
