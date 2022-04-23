@@ -56,7 +56,7 @@ const OldFarmStep1: React.FC = () => {
   }, [stakedOrHasTokenBalance, farmsList])
 
   const rowData = chosenFarmsMemoized.map((farm) => {
-    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('PANCAKE', '')
+    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('BIGSWAP', '')
 
     const row: RowProps = {
       farm: {
