@@ -7,31 +7,27 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
-        isHighlighted: true,
-      },
-      {
-        label: t('Brand'),
-        href: 'https://docs.pancakeswap.finance/brand',
+        href: 'https://contact@bigswap.xyz',
       },
       {
         label: t('Blog'),
-        href: 'https://medium.com/pancakeswap',
+        href: 'https://medium.com/bigswap-finance',
       },
       {
         label: t('Community'),
-        href: 'https://docs.pancakeswap.finance/contact-us/telegram',
+        href: 'https://t.me/BigSwapArmy',
       },
       {
-        label: t('CAKE token'),
-        href: 'https://docs.pancakeswap.finance/tokenomics/cake',
+        label: t('BGSP token'),
+        href: 'https://bigswap.xyz/what-is-bigswap/',
       },
       {
         label: '—',
       },
       {
-        label: t('Online Store'),
-        href: 'https://pancakeswap.creator-spring.com/',
+        label: t('Online Store Coming Soon'),
+        href: '',
+        isHighlighted: true,
       },
     ],
   },
@@ -40,15 +36,15 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'https://docs.pancakeswap.finance/contact-us/customer-support',
+        href: 'https://t.me/BigSwapSupport',
       },
       {
         label: t('Troubleshooting'),
-        href: 'https://docs.pancakeswap.finance/help/troubleshooting',
+        href: 'https://docs.bigswap.exchange/help/troubleshooting',
       },
       {
         label: t('Guides'),
-        href: 'https://docs.pancakeswap.finance/get-started',
+        href: 'https://docs.bigswap.exchange//get-started',
       },
     ],
   },
@@ -57,23 +53,11 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/bigswap-finance',
       },
       {
         label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance',
-      },
-      {
-        label: t('Bug Bounty'),
-        href: 'https://docs.pancakeswap.finance/code/bug-bounty',
-      },
-      {
-        label: t('Audits'),
-        href: 'https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
-      },
-      {
-        label: t('Careers'),
-        href: 'https://docs.pancakeswap.finance/hiring/become-a-chef',
+        href: 'https://docs.bigswap.exchange/',
       },
     ],
   },
