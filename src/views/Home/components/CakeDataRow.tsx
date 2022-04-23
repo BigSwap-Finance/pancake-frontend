@@ -102,14 +102,6 @@ const CakeDataRow = () => {
           </>
         )}
       </Flex>
-      <StyledColumn>
-        <Text color="textSubtle">{t('Burned to date')}</Text>
-        {burnedBalance ? (
-          <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={burnedBalance} />
-        ) : (
-          <Skeleton height={24} width={126} my="4px" />
-        )}
-      </StyledColumn>
       <StyledColumn noMobileBorder>
         <Text color="textSubtle">{t('Market cap')}</Text>
         {mcap?.gt(0) && mcapString ? (
