@@ -275,7 +275,7 @@ const Farms: React.FC = ({ children }) => {
     const { token, quoteToken } = farm
     const tokenAddress = token.address
     const quoteTokenAddress = quoteToken.address
-    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('PANCAKE', '')
+    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('BIGSWAP', '')
 
     const row: RowProps = {
       apr: {
@@ -443,7 +443,6 @@ const Farms: React.FC = ({ children }) => {
           </Flex>
         )}
         <div ref={observerRef} />
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
       </Page>
     </FarmsContext.Provider>
   )
