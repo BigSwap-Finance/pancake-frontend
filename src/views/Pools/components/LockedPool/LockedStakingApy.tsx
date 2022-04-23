@@ -54,7 +54,7 @@ const LockedStakingApy: React.FC<LockedStakingApyPropsType> = ({ stakingToken, s
       <Flex justifyContent="space-between" mb="16px">
         <Box>
           <Text color="textSubtle" textTransform="uppercase" bold fontSize="12px">
-            {t('CAKE locked')}
+            {t('BGSP locked')}
           </Text>
           <BalanceWithLoading color="text" bold fontSize="16px" value={currentLockedAmount} decimals={5} />
           <BalanceWithLoading
@@ -104,29 +104,29 @@ const LockedStakingApy: React.FC<LockedStakingApyPropsType> = ({ stakingToken, s
       )}
       <Flex alignItems="center" justifyContent="space-between">
         <Text color="textSubtle" textTransform="uppercase" bold fontSize="12px">
-          {t('Recent CAKE profit')}
+          {t('Recent BGSP profit')}
         </Text>
         <BalanceWithLoading color="text" bold fontSize="16px" value={earningTokenBalance} decimals={5} />
       </Flex>
       {position === VaultPosition.LockedEnd && (
         <Flex alignItems="center" justifyContent="space-between">
           <Text color="textSubtle" textTransform="uppercase" bold fontSize="12px">
-            {t('After Burning In')}
+            {t('After Deduction In')}
           </Text>
           <Text color="failure" bold>
-            <BurningCountDown lockEndTime={userData?.lockEndTime} />
+            <DeductionCountDown lockEndTime={userData?.lockEndTime} />
           </Text>
         </Flex>
       )}
       {position === VaultPosition.AfterBurning && (
         <Flex alignItems="center" justifyContent="space-between">
           <Text color="textSubtle" textTransform="uppercase" bold fontSize="12px">
-            {t('After burning')}
+            {t('After deduction')}
           </Text>
           <Text color="failure" bold>
             {isUndefinedOrNull(userData?.currentOverdueFee)
               ? '-'
-              : t('%amount% Burned', { amount: getFullDisplayBalance(userData?.currentOverdueFee, 18, 5) })}
+              : t('%amount% Deducted', { amount: getFullDisplayBalance(userData?.currentOverdueFee, 18, 5) })}
           </Text>
         </Flex>
       )}
