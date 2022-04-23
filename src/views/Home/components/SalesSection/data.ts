@@ -24,16 +24,16 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   },
 })
 
-export const earnSectionData: SalesSectionProps = {
-  headingText: 'Earn passive income with crypto.',
-  bodyText: 'BigSwap makes your crypto work for you.',
+export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
+  headingText: t('Earn passive income with crypto.'),
+  bodyText: t('BigSwap makes it easy to make your crypto work for you.'),
   reverse: true,
   primaryButton: {
     to: '/farms',
-    text: 'Explore',
+    text: t('Explore'),
     external: false,
   },
-  secondaryButton: {
+   secondaryButton: {
     to: 'https://docs.bigswap.exchange/products/yield-farming',
     text: 'Learn',
     external: true,
@@ -44,28 +44,29 @@ export const earnSectionData: SalesSectionProps = {
       { src: '', alt: '' },
     ],
   },
-}
+})
 
-export const cakeSectionData: SalesSectionProps = {
-  headingText: 'BGSP makes our world go round.',
-  bodyText:
+export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
+  headingText: t('BGSP makes our world go round.'), 
+  bodyText: t(
     'BGSP token is the heart of the BigSwap ecosystem. Buy it, Farm it, Spend it, Stake it, you can even Vote with it!',
+  ),
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f',
-    text: 'Buy BGSP',
+    text: t('Buy BGSP'),
     external: false,
   },
   secondaryButton: {
     to: 'https://docs.bigswap.exchange/tokenomics/BGSP',
-    text: 'Learn',
+    text: t('Learn'),
     external: true,
   },
 
   images: {
     path: '/images/home/cake/',
     attributes: [
-      { src: '', alt: '' }, 
+     { src: '', alt: '' }, 
     ],
-   },
-} 
+  },
+})
